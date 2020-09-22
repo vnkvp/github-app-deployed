@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI";
+    background: #FFF;
+}
+.logo {
+    max-width: 40px;
+    object-fit: contain;
+}
+.loading {
+    margin: 10% auto;
+}
+.user-info, .actions {
+    margin: 20px 10px;
+}
+.username {
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #24292e;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2px 15px;
+    border-bottom: 1px solid #24292e;
+}
+.links {
+    color: #24292e;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.search-bar {
+    width: 75vw;
+    height: 2rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #24292e;
+    background: #24292e;
+    color: #fff;
+}
+.picture {
+    border: 1px solid #24292e;
+    border-radius: 3px;
+    padding: 5px;
+    max-width: 22.5vw;
+    max-height: 60vh;
+}
+.actions {
+    margin-left: 10px;
+    color: #24292e;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.description {
+    padding: 10px;
+}
+.list {
+    list-style: none;
+}
+.title, .login, .language {
+    font-weight: 100;
+}
+.login {
+    font-size: 18px;
+}
+.repo-info {
+    list-style: none;
+}
+.repos,
+.starred {
+    padding: 20px;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+.repo, .star {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+@media (max-width: 1070px) {
+    .user-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .search-bar {
+        width: 33vw;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .usercontent {
+        margin: 0 auto;
+    }
+    .picture {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media (max-width: 500px) {
+    .user-info {
+        display: flex;
+        flex-direction: column;
+    }
+    .pic {
+        margin: 0 auto;
+    }
+    .picture {
+        max-width: 250px;
+        max-height: 250px;
+        border-radius: 50%;
+    }
+    .actions {
+        margin-left: 0;
+        font-size: 12px;
+    }
+}
